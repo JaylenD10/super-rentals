@@ -1,0 +1,28 @@
+{{!-- <div class="image">
+    <img ...attributes>
+</div> --}}
+
+    {{!-- <div class="image large"> --}}
+    {{!-- <button type="button" class="image large" {{on "click" this.toggleSize}}> --}}
+        {{!-- <img ...attributes>
+        <small>View Smaller</small> --}}
+    {{!-- </div> --}}
+    {{!-- </button> --}}
+
+    {{!-- <div class="image"> --}}
+    {{!-- <button type="button" class="image" {{on "click" this.toggleSize}}> --}}
+        {{!-- <img ...attributes>
+        <small>View Larger</small> --}}
+    {{!-- </div> --}}
+    {{!-- </button> --}}
+
+
+<button type="button" class="image {{if this.isLarge "large"}}" {{on "click" this.toggleSize}}>
+    <img ...attributes>
+    {{!-- {{#if this.isLarge}}
+        <small>View Smaller</small>
+    {{else}}
+        <small>View Larger</small>
+    {{/if}} --}}
+    <small>View {{if this.isLarge "Smaller" "Larger"}}</small>
+</button>
