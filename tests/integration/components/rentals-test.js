@@ -141,7 +141,7 @@ module('Integration | Component | rentals', function (hooks) {
   });
 
   test('it updates the results according to the search query', async function (assert) {
-    await render(hbs`<Rentals @results={{this.rentals}} />`);
+    await render(hbs`<Rentals @rentals={{this.rentals}} />`);
 
     assert.dom('.rentals').exists();
     assert.dom('.rentals input').exists();
